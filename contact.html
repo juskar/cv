@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <h2>My Contact Details</h2>
+    <p><strong>Email:</strong> justinkarakkat@gmail.com</p>
+    <p><strong>Phone:</strong> 201-###-####</p>
+
+    <form action="mailto:justinkarakkat@gmail.com" method="post" enctype="text/plain"> <!-- adding a form that a user submits information into -->
+      <!-- action is what happens when submit button is pressed. post means whatever is typed into the message will be transferred. -->
+      <!-- mailto: when using this, it will open email client and copy destination email address.-->
+      <!-- enctype='text/plain' specifies website is encoded in plain text so that the
+      stuff written in the form area is regular. -->
+      <label>Your name:</label> <!-- Ask user for name input -->
+      <input type="text" name="yourName"><br> <!-- text box for input of ^ question. type='text' is simply saying the input is a text input. -->
+      <!-- can take name and value out -->
+      <label>Your email:</label>
+      <input type="email" name="yourEmail" value=""><br>
+      <!-- name='yourEmail' identifies the data in the input -->
+      <label>Message:</label><br>
+      <textarea name="yourName" rows="10" cols="30"></textarea><br>
+      <input type="submit"> <!-- type = submit creates a button to submit. Delete 'value"" '-->
+    </form>
+  </body>
+</html>
